@@ -1,0 +1,428 @@
+/* ===========================
+   ✨ General Styling ✨
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ===========================
+   🔥 Logo Animation 🔥
+=========================== */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 10px #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 10px #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ===========================
+   📌 Card Styling 📌
+=========================== */
+.card {
+  padding: 2em;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Dark Mode for Cards */
+.card.dark-mode {
+  background: #222;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Read More Section */
+.read-the-docs {
+  color: #888;
+}
+
+/* ===========================
+   🌟 Navbar Styling 🌟
+=========================== */
+nav {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav.dark-mode {
+  background-color: #000000;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Dark Mode Navbar Items */
+nav ul li.dark-mode {
+  background-color: #222;
+  color: #ffffff;
+}
+
+/* ===========================
+   🔘 Dark Mode Toggle Button 🔘
+=========================== */
+.toggle-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+  background-color: #333;
+}
+
+/* ===========================
+   📂 Accordion Styling 📂
+=========================== */
+.accordion-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Dark Mode for Accordion */
+.accordion-item.dark-mode {
+  background-color: #222;
+}
+
+.accordion-button.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.accordion-body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ===========================
+   📱 Responsive Design 📱
+=========================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}
+/* ===========================
+   ✨ General Styling ✨
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ===========================
+   🔥 Logo Animation 🔥
+=========================== */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 10px #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 10px #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ===========================
+   📌 Card Styling 📌
+=========================== */
+.card {
+  padding: 2em;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Dark Mode for Cards */
+.card.dark-mode {
+  background: #222;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Read More Section */
+.read-the-docs {
+  color: #888;
+}
+
+/* ===========================
+   🌟 Navbar Styling 🌟
+=========================== */
+nav {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav.dark-mode {
+  background-color: #000000;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Dark Mode Navbar Items */
+nav ul li.dark-mode {
+  background-color: #222;
+  color: #ffffff;
+}
+
+/* ===========================
+   🔘 Dark Mode Toggle Button 🔘
+=========================== */
+.toggle-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+  background-color: #333;
+}
+
+/* ===========================
+   📂 Accordion Styling 📂
+=========================== */
+.accordion-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Dark Mode for Accordion */
+.accordion-item.dark-mode {
+  background-color: #222;
+}
+
+.accordion-button.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.accordion-body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ===========================
+   📱 Responsive Design 📱
+=========================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}
